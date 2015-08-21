@@ -27,17 +27,27 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>FindFind.it</title>
     </head>
     <body>
         <div class="app">
-            <h1>Hello PhoneGap2</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+            <h1>Hello PhoneGap 4</h1>
+
+
+<form role="form" action="https://www.findfind.it/n/de.deu" method="get" id="serchilo-shortcut-query-form" accept-charset="UTF-8" class="form">  
+  <div class="">
+    <input id="search-input" type="text" class="form-control" name="query" value="" autocomplete="off" />
+ <script>
+      document.getElementById('search-input').focus(); 
+    </script>
+    <div class="input-group-btn">
+      <button type="submit" class="btn btn-primary">Go</button>
+    </div><!-- /btn-group -->
+  </div><!-- /input-group -->
+</form>
+
+						<a href="#" onclick="window.open(encodeURI('https://www.google.com/maps?hl=de&q=berlin'), '_system')">Test link 3</a>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
