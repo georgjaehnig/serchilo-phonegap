@@ -21,7 +21,8 @@ var app = {
     initialize: function() {
 
         this.bindEvents();
-				alert(1);
+				//alert(1);
+
 				
     },
     // Bind Event Listeners
@@ -38,10 +39,24 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         //app.receivedEvent('deviceready');
-				alert(2);
+      //var searchInput = $('#search-input');
+			//searchInput.focus();
+	
+      $('#search-input').click(function(e) {
+				$(this).focus();
+			});
+			$('#trigger-button').click( function(e) {
+				$('#search-input').focus();
+				$('#search-input').trigger('click');
+			});
+			$('#trigger-button').click();
+
+			//alert(2);
+
     },
     onDeviceLoad: function() {
         //app.receivedEvent('deviceready');
 				alert(3);
     },
 };
+
